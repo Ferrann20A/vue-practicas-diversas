@@ -7,6 +7,9 @@
             <li>
                 <router-link to="/collatz">Conjetura de Collatz</router-link>
             </li>
+            <li>
+                <router-link to="/multiplicar">Tabla de Multiplicar</router-link>
+            </li>
         </ul>
     </div>
 </template>

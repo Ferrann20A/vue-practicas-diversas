@@ -1,4 +1,5 @@
 <template>
+  <h1>Ejemplos Varios VUE</h1>
   <MenuComponent/>
   <router-view></router-view>
 </template>
