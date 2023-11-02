@@ -22,13 +22,13 @@
     </div>
     <hr/>
     <h1>Multiplicacion de la 2º forma</h1>
-    
+
     <hr />
     <h1>Multiplicacion 3º forma</h1>
     <table v-if="numero !== null">
       <thead>
         <tr>
-          <th>Multiplicacion filters</th>
+          <th>Multiplicacion</th>
         </tr>
       </thead>
       <tbody v-html="$filters.getTablaMultiplicar(numero)">
@@ -44,17 +44,17 @@
         data() {
             return {
                 numero: null,
-                tabla: [],
+                tabla: []
             };
         },
         methods: {
             generarTabla() {
-            if (this.numero) {
-                this.tabla = [];
-                for (let i = 1; i <= 10; i++) {
-                this.tabla.push(this.numero * i);
+                if (this.numero) {
+                    this.tabla = [];
+                    for (let i = 1; i <= 10; i++) {
+                        this.tabla.push(this.numero * i);
+                    }
                 }
-            }
             },
         }
     }
